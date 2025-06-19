@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+        }
+        section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+<div id="lottie-scroll-progress"></div>
+
+<!-- Hero -->
+<section id="hero" class="text-center" style="min-height: 100vh; display: flex; align-items: center; background: #FEB6C0">
+  <div class="container">
+    <div class="typewriter-wrapper text-center">
+        <h1 class="typewriter-line line1">Hi, I am <strong>Stella Cao,</strong></h1>
+        <h3 class="mb-2 typewriter-line line2">a Full Stack Developer</h3>
+    </div>
+    <p id="delayed-text" class="delayed hidden text-white" style="font-size: 1.3rem;">
+      I have a path illuminated by code, steered by the quiet light of a
+      <span id="lottie-star" style="width: 70px; display: inline-block; vertical-align: middle;"></span>
+    </p>
+  </div>
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+    <div class="container">
+        <h2 class="text-center">I work with...</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4" style="width: 300px; margin: auto;">
+                <div id="lottie-skills"></div>
+            </div>
+            <div class="col-md-8" data-aos="fade-up-left" data-aos-duration="1000">
+                <ul class="text-left">
+                    <p><li><strong>Programming Languages :</strong> Ruby, Python, JavaScript, SQL, HTML, CSS</li></p>
+                    <p><li><strong>Frameworks & Libraries</strong>
+                        <ul>
+                            <li>Backend : Ruby on Rails, Flask, Node.js</li>
+                            <li>Frontend : ReactJs, NextJs, jQuery</li>
+                            <li>UI Components : Material UI, Bootstrap</li>
+                        </ul>
+                    </li></p>
+                    <p><li><strong>Web Technologies :</strong> REST APIs, Webhooks</li></p>
+                    <p><li><strong>Databases & Caching :</strong> MySQL, PostgreSQL, SQLite, Redis, Elasticsearch, Memcached</li></p>
+                    <p><li><strong>Cloud & Hosting Services :</strong> AWS, GCP, Firebase, Vercel</li></p>
+                    <p><li><strong>DevOps & Virtualization :</strong> Docker</li></p>
+                    <p><li><strong>Testing Tools :</strong> RSpec, pytest</li></p>
+                    <p><li><strong>Operating Systems :</strong> macOS, Windows</li></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Expérience -->
+<section id="experience" class="bg-white" data-aos="fade-up">
+    <div class="container py-5">
+        <h2 class="text-center mb-5">What I've done</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h5>Apr. 2021 – Present</h5>
+                    <h4>Full Stack Developer – Nuxos Publishing Technologies | Full Remote</h4>
+                    <p><ul>
+                        <li>Designed and implemented core features of a book publishing platform.</li>
+                        <li>Developed REST APIs and integrated third-party services.</li>
+                        <li>Built interactive UI components.</li>
+                        <li>Ensured application reliability through background job systems.</li>
+                        <li>Contributed to code reviews and agile development cycles within a distributed team.</li>
+                    </ul></p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h5>Oct. 2018 – Oct. 2020</h5>
+                    <h4>Software Developer (Apprenticeship) - Estimancy | Paris</h4>
+                    <p>
+                        <ul>
+                            <li>Participated in the development of a SaaS platform for project estimation.</li>
+                            <li>Developed dynamic user interfaces and built backend features.</li>
+                            <li>Collaborated in an agile team environment with version control and CI pipelines.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Formation -->
+<section id="education">
+    <div class="container">
+        <h2 class="text-center" style="margin-bottom: 2rem;">Where I learned</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6" style="width: 400px; margin: auto;">
+                <div id="lottie-education"></div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1500">
+                <strong>Master’s Degree in Software Engineering</strong>
+                    <ul>
+                        <li>Work-study program | Sept. 2018 – Sept. 2020</li>
+                        <li>École Supérieure de Génie Informatique (ESGI) – Paris</li>    
+                    </ul>
+                <strong>Bachelor’s Degree in Computer Science</strong>
+                    <ul>
+                        <li>Sept. 2014 – May 2018</li>
+                        <li>Sorbonne Université UPMC – Paris</li>
+                    </ul>
+                <strong>French Scientific Baccalaureate – with Honors</strong>
+                    <ul>
+                        <li>Graduated 2014</li>
+                        <li>Nguyen Dinh Chieu High School – Vietnam</li>    
+                    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Langues -->
+<section id="languages" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">I speak...</h2>
+        <div class="row justify-content-center" data-aos="fade-up">
+            <!-- Langue 1 -->
+            <div class="col-6 col-md-4">
+                <div class="circle-container" data-percent="100">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle"
+                              stroke-dasharray="0, 100"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">Vietnamese</text>
+                    </svg>
+                    <div class="level">Native</div>
+                </div>
+            </div>
+
+            <!-- Langue 2 -->
+            <div class="col-6 col-md-4">
+                <div class="circle-container" data-percent="90">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle"
+                              stroke-dasharray="0, 100"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">French</text>
+                    </svg>
+                    <div class="level">C1</div>
+                </div>
+            </div>
+
+            <!-- Langue 3 -->
+            <div class="col-6 col-md-4">
+                <div class="circle-container" data-percent="85">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle"
+                              stroke-dasharray="0, 100"
+                              d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage">English</text>
+                    </svg>
+                    <div class="level">C1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 text-center">
+    <div class="container">
+        <div class="mb-4">
+            <h2>Let's connect !</h2>
+        </div>
+
+        <!-- Icônes interactives -->
+        <div class="contact-icons mb-3" data-aos="fade-up">
+            <a href="mailto:ton.email@example.com" class="me-4" target="_blank">
+                <div id="lottie-mail" style="width: 100px; height: 100px; margin: auto;"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/tonprofil" class="me-4" target="_blank">
+                <div id="lottie-linkedin" style="width: 100px; height: 100px; margin: auto;"></div>
+            </a>
+            <!-- >a href="https://github.com/tonprofil" class="me-4" target="_blank">
+                <div>my github</div>
+            </a> -->
+        </div>
+
+        <!-- Animation Lottie -->
+        <div class="mb-4">
+            <div id="lottie-contact" style="width: 150px; height: 150px; margin: auto;"></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-hero'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/static/lottie/developer.json'  // fichier Lottie
+    });
+</script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-skills'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/static/lottie/working-cat.json'
+    });
+</script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-education'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/static/lottie/education.json'
+    });
+</script>
+<script>
+    const lottieContainer = document.getElementById('lottie-scroll-progress');
+
+    const anim = lottie.loadAnimation({
+        container: lottieContainer,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "{{ url_for('static', filename='lottie/scroll-indicator.json') }}"
+    });
+
+    // Attendre que l’animation soit chargée
+    anim.addEventListener('DOMLoaded', () => {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight;
+
+            // Joue l'animation en fonction du scroll
+            if (anim.totalFrames) {
+                anim.goToAndStop(scrollPercent * anim.totalFrames, true);
+            }
+
+            // Fait descendre dynamiquement le conteneur
+            const viewportHeight = window.innerHeight;
+            const newTop = scrollPercent * (viewportHeight - 300); // 300 = hauteur de l'anim
+            lottieContainer.style.top = `${newTop}px`;
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const circles = document.querySelectorAll(".circle-container");
+
+        const animateCircle = (el) => {
+            const path = el.querySelector(".circle");
+            const percent = el.getAttribute("data-percent");
+            path.setAttribute("stroke-dasharray", `${percent}, 100`);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCircle(entry.target);
+                    observer.unobserve(entry.target); // anim once
+                }
+            });
+        }, { threshold: 0.6 });
+
+        circles.forEach(circle => observer.observe(circle));
+    });
+</script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-contact'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: "{{ url_for('static', filename='lottie/contact.json') }}"
+    });
+</script>
+<script>
+    /** const images = [
+        "{{ url_for('static', filename='img/blue.jpg') }}",
+        "{{ url_for('static', filename='img/rose.jpg') }}",
+        "{{ url_for('static', filename='img/orange.jpg') }}"
+    ];
+    let index = 0;
+    const hero = document.getElementById('hero');
+
+    setInterval(() => {
+        index = (index + 1) % images.length;
+        hero.style.backgroundImage = `url(${images[index]})`;
+    }, 5000); // every 5 seconds **/
+</script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-mail'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/static/lottie/mail-envelop.json'
+    });
+</script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-linkedin'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/static/lottie/linkedin.json'
+    });
+</script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-star'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/static/lottie/star.json'
+    });
+</script>
+<script>
+  setTimeout(function() {
+    const el = document.getElementById("delayed-text");
+    el.classList.remove("hidden");
+    el.classList.add("fade-up");
+  }, 5500);
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+body {
+    cursor: url("{{ url_for('static', filename='img/soyjak.cur') }}"), auto;
+}
+
+li { list-style: none;}
+
+h2 { 
+    color: #FEB6C0;
+}
+
+#lottie-scroll-progress {
+    position: fixed;
+    right: 20px;
+    width: 60px;
+    height: 300px;
+    z-index: 999;
+    pointer-events: none;
+    transition: top 0.1s ease-out;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 20px;
+    border-left: 3px solid #007bff;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #FEB6C0;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #FEB6C0;
+}
+
+.timeline-content {
+    margin-left: 20px;
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 20px;
+    border-left: 3px solid #FEB6C0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #FEB6C0;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #FEB6C0;
+}
+
+.timeline-content {
+    margin-left: 20px;
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.circular-chart {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke: #FEB6C0;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 1.2s ease;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.percentage {
+    fill: #333;
+    font-size: 0.35em;
+    text-anchor: middle;
+    font-weight: bold;
+}
+
+.circle-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.level {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.hero-section {
+    position: relative;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.typewriter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.typewriter-line {
+  font-family: monospace;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  margin-bottom: 10px;
+  visibility: hidden; /* caché par défaut */
+}
+
+/* === LIGNE 1 === */
+.line1 {
+  border-right: 2px solid orange;
+  visibility: visible;
+  animation:
+    typing1 2.5s steps(22, end) forwards,
+    hide-caret 0.1s forwards;
+  animation-delay: 0s, 2.5s;
+}
+
+/* === LIGNE 2 === */
+.line2 {
+  border-right: 2px solid orange;
+  animation:
+    show-line 0s forwards,
+    typing2 2.5s steps(23, end) forwards,
+    hide-caret 0.1s forwards;
+  animation-delay: 2.6s, 2.7s, 5.2s;
+}
+
+/* animations de frappe */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 22ch }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 23ch }
+}
+
+/* afficher ligne */
+@keyframes show-line {
+  to { visibility: visible; }
+}
+
+/* enlever curseur */
+@keyframes hide-caret {
+  to { border-right: none; }
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
