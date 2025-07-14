@@ -2,10 +2,37 @@ body {
     cursor: url("{{ url_for('static', filename='img/soyjak.cur') }}"), auto;
 }
 
-li { list-style: none;}
-
 h2 { 
     color: #FEB6C0;
+}
+
+
+ul {
+  list-style-type: square
+}
+
+@media (max-width: 768px) {
+    .skills-image {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills-image {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-image {
+        width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .education-image {
+        width: 400px;
+    }
 }
 
 #lottie-scroll-progress {
